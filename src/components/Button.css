@@ -1,0 +1,11 @@
+.button > h1 {
+  font-size: 25px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+#underline {
+  position: relative;
+  height: 2px;
+  border-radius: 1px;
+}

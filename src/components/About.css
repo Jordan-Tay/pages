@@ -1,0 +1,28 @@
+.about-header {
+  margin: 2%;
+  font-family: garamond;
+}
+
+.about-container {
+  margin: 2%;
+  width: 622px;
+  height: max-content;
+  position: relative;
+  display: grid;
+  cursor: default;
+}
+
+.about-card {
+  width: 620px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.about-card-content {
+  padding: 4%;
+  font-family: garamond;
+}
+
+.about-card-content > h1 {
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+.contact-class {
+  overflow: auto;
+}
+
+.contact-header {
+  margin: 2%;
+  margin-top: 10%;
+  font-family: garamond;
+}
+
+.card-container {
+  margin: 2%;
+  width: 622px;
+  border-radius: 15px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-stack-top,
+.card-stack-bottom {
+  width: 620px;
+  font-family: garamond;
+  cursor: default;
+  border-radius: 15px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.card-stack-top {
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.card-stack-bottom {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.card-stack-top-content {
+  padding: 4%;
+}
+
+.card-stack-top-content > h1 {
+  text-align: center;
+}
+
+.card-stack-bottom-content {
+  padding: 4%;
+}
+
+.card-stack-bottom-content > h2 {
+  text-align: center;
+}
+
+.circular-link {
+  border-radius: 50%;
+}
+
+.tooltip {
+  font-family: garamond;
+}
+
+.button-tooltip {
+  font-family: garamond;
+  font-size: 12px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+#github-after {
+  color: auto;
+  border-radius: 30px;
+}
+
