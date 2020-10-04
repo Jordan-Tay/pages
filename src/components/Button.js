@@ -8,7 +8,6 @@ class Button extends React.Component {
     this.state = {
       title: this.props.title,
       size: this.props.size,
-      marginTop: this.props.marginTop,
       toggle: 0,
     }
   }
@@ -36,7 +35,6 @@ class Button extends React.Component {
         <Spring
           from={{ 
             fontSize: this.state.size, 
-            marginTop: this.state.marginTop,
           }}
           to={{ 
             color: toggle ? 'black' : 'rgb(70, 70, 70)',

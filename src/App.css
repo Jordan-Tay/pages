@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'garamond';
+  src: local('garamond-regular'), url(./fonts/Garamond\ Regular.ttf);
+}
+
+@font-face {
+  font-family: 'garamond-bold';
+  src: local('garamond-bold'), url(./fonts/Garamond.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +21,8 @@ a {
 }
 
 .app {
-  margin: 120px;
+  margin: 8%;
+  margin-top: 120px;
 }
 
 #about-me {

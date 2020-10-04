@@ -12,7 +12,7 @@ class Nav extends React.Component {
   }
 
   handleScroll() {
-    this.setState({toggle: window.pageYOffset});
+    this.setState({ toggle: window.pageYOffset });
   }
 
   componentDidMount() {
@@ -28,30 +28,30 @@ class Nav extends React.Component {
     return (
       <Spring
         to={{
-          boxShadow: toggle ? '0 0px 5px 5px rgba(100, 100, 100, 0.19)' : '0 0px 0px 0px white', 
+          boxShadow: toggle ? '0 0px 5px 5px rgba(100, 100, 100, 0.19)' : '0 0px 0px 0px white',
           borderBottom: toggle ? '0px solid white' : '1px solid #ccc'
         }}
-        config={ config.gentle }
+        config={config.gentle}
       >
         {props => (
           <nav style={props}>
-            <a href="#about-me">
-              <Button title="Jordan Tay" size='25px' marginTop='10%' />
-            </a>
-            <div className="nav-menu">
-              <ul className="nav-items">
-                <li>
-                  <a href="#projects">
-                    <Button title="Projects" size='17px' marginTop='15%' />
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact">
-                    <Button title="Contact" size='17px' marginTop='15%' />
-                  </a>
-                </li>
-              </ul>
+            <div className="nav-main">
+              <a href="#about-me">
+                <Button title="Jordan Tay" size='25px' />
+              </a>
             </div>
+            <ul className="nav-items">
+              <li>
+                <a href="#projects">
+                  <Button title="Projects" size='17px' />
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <Button title="Contact" size='17px' />
+                </a>
+              </li>
+            </ul>
           </nav>
         )}
       </Spring>

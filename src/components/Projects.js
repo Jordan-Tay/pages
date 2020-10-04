@@ -6,7 +6,7 @@ function Projects() {
   const [itemPoint, setItemPoint] = useState(null);
   const [itemClick, setItemClick] = useState(null);
 
-  const itemList = ["Personal Website", "ARM11 Assembler and Emulator (Group Project)", "LinkUp (IC Hack)", "TOS Game", "Minesweeper"];
+  const itemList = ["Rhythmap", "Personal Website", "ARM11 Assembler and Emulator", "LinkUp", "TOS Game", "Minesweeper"];
   const itemAnimate = useSprings(
     itemList.length, 
     itemList.map((item, i) => ({
@@ -18,14 +18,14 @@ function Projects() {
   const [descriptionPoint, setDescriptionPoint] = useState(0);
 
   const descriptionShade = useSpring({
-    boxShadow: descriptionPoint ? '0 0px 20px 0px rgba(0, 0, 0, 0.19)' : '0 0px 0px 0px white',
+    boxShadow: descriptionPoint ? '0 10px 20px 0px rgba(0, 0, 0, 0.19)' : '0 0px 0px 0px white',
   })
 
   const descriptionCover = useSpring({
     opacity: itemClick !== null ? 0 : 1,
   });
 
-  const descriptionList = [<PersonalWebsite />, <Arm11 />, <LinkUp />, <TosGame />, <Minesweeper />];
+  const descriptionList = [<Rhythmap />, <PersonalWebsite />, <Arm11 />, <LinkUp />, <TosGame />, <Minesweeper />];
   const descriptionAnimate = useSprings(
     descriptionList.length,
     descriptionList.map((item, i) => ({
@@ -79,6 +79,14 @@ function Projects() {
       </div>
     </div>
   );
+}
+
+const Rhythmap = ()=> {
+  return (
+    <div>
+      <h1>Rhythmap</h1>
+    </div>
+  )
 }
 
 const PersonalWebsite = ()=> {

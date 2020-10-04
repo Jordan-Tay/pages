@@ -8,24 +8,27 @@ nav {
   width: 100%;
   color: black;
   border-bottom: 1px solid #ccc;
-  font-family: garamond;
+  font-family: garamond-bold;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
   z-index: 10;
 }
 
-.nav-menu {
-  height: 60px;
+.nav-main {
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
 .nav-items {
+  margin-top: 33px;
+  padding: 0px;
+  height: 27px;
   display: flex;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
   list-style: none;
 }
 
 .nav-items > li {
-  margin-left: 20px;
-  margin-right: 15px;
+  margin-right: 25px;
 }

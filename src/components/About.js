@@ -6,7 +6,7 @@ function About() {
   const [point, setPoint] = useState(0);
 
   const shade = useSpring({
-    boxShadow: point ? '0 0px 20px 0px rgba(0, 0, 0, 0.19)' : '0 0px 0px 0px white',
+    boxShadow: point ? '0 10px 20px 0px rgba(0, 0, 0, 0.19)' : '0 0px 0px 0px white',
   });
 
   return (

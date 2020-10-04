@@ -5,12 +5,12 @@
 .contact-header {
   margin: 2%;
   margin-top: 10%;
-  font-family: garamond;
+  font-family: garamond-bold;
 }
 
 .card-container {
   margin: 2%;
-  width: 622px;
+  width: 96%;
   border-radius: 15px;
   height: max-content;
   display: grid;
@@ -19,7 +19,7 @@
 
 .card-stack-top,
 .card-stack-bottom {
-  width: 620px;
+  width: calc(100% - 2px);
   font-family: garamond;
   cursor: default;
   border-radius: 15px;
@@ -42,10 +42,12 @@
 
 .card-stack-top-content > h1 {
   text-align: center;
+  font-family: garamond-bold;
 }
 
 .card-stack-bottom-content {
   padding: 4%;
+  font-family: garamond-bold;
 }
 
 .card-stack-bottom-content > h2 {
@@ -67,10 +69,8 @@
 
 .icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
 }
 
 .icon-button {
